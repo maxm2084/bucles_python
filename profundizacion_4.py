@@ -73,33 +73,33 @@ while True:
   print("3- Multiplicación (*)")
   print("4- División (/)")
   print("5- SALIR")
-  opcion=input("Ingrese el numero de operacion: ")
+  opcion  = input("Ingrese el numero de operacion: ")
   while str.isdecimal(opcion) is False:
-   opcion=input("Error,debe ingresar un numero entre 1 y 5:")
+   opcion = input("Error,debe ingresar un numero entre 1 y 5: ")
   while int(opcion)<1 or int(opcion)> 5:
-      opcion=input("Ingrese un numero entre 1 y 5:")
+      opcion = input("Ingrese un numero entre 1 y 5: ")
       while str.isdecimal(opcion) is False:
-       opcion=input("Error,debe ingresar un numero entre 1 y 5:")
+       opcion=input("Error,debe ingresar un numero entre 1 y 5: ")
 
-  if int(opcion) ==1:
+  if int(opcion) == 1:
     print("Ingrese los numeros para la suma: ")
     numero_1 = float(input("Ingrese el primer numero: "))
     numero_2 = float(input("Ingrese el segundo numero: "))
     suma= numero_1 + numero_2
     print(f"El resultado de la resta es {suma}")
-  elif int(opcion) ==2:
+  elif int(opcion) == 2:
     print("Ingrese los numeros para la resta: ")
     numero_1 = float(input("Ingrese el primer numero: "))
     numero_2 = float(input("Ingrese el segundo numero: "))
     resta= numero_1 - numero_2
     print(f"El resultado de la resta es {resta}")
-  elif int(opcion) ==3:
+  elif int(opcion) == 3:
     print("Ingrese los numeros para la multiplicacion: ")
     numero_1 = float(input("Ingrese el primer numero: "))
     numero_2 = float(input("Ingrese el segundo numero: "))
-    multiplicacion= numero_1 * numero_2
+    multiplicacion = numero_1 * numero_2
     print(f"El resultado de la multiplicacion es {multiplicacion}")
-  elif int(opcion) ==4:
+  elif int(opcion) == 4:
     print("Ingrese los numeros para la division: ")
     numero_1 = float(input("Ingrese el primer numero: "))
     numero_2 = float(input("Ingrese el segundo numero: "))
